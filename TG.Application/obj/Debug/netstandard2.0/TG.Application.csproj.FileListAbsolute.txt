@@ -1,0 +1,16 @@
+C:\git\TriviaGame\TG.Application\obj\Debug\netstandard2.0\TG.Application.csprojAssemblyReference.cache
+C:\git\TriviaGame\TG.Application\obj\Debug\netstandard2.0\TG.Application.AssemblyInfoInputs.cache
+C:\git\TriviaGame\TG.Application\obj\Debug\netstandard2.0\TG.Application.AssemblyInfo.cs
+C:\git\TriviaGame\TG.Application\obj\Debug\netstandard2.0\TG.Application.csproj.CoreCompileInputs.cache
+C:\git\TriviaGame\TG.Application\bin\Debug\netstandard2.0\TG.Application.deps.json
+C:\git\TriviaGame\TG.Application\bin\Debug\netstandard2.0\TG.Application.dll
+C:\git\TriviaGame\TG.Application\bin\Debug\netstandard2.0\TG.Application.pdb
+C:\git\TriviaGame\TG.Application\bin\Debug\netstandard2.0\TG.Domain.dll
+C:\git\TriviaGame\TG.Application\bin\Debug\netstandard2.0\TG.Infrastructure.dll
+C:\git\TriviaGame\TG.Application\bin\Debug\netstandard2.0\TG.Domain.pdb
+C:\git\TriviaGame\TG.Application\bin\Debug\netstandard2.0\TG.Infrastructure.pdb
+C:\git\TriviaGame\TG.Application\obj\Debug\netstandard2.0\TG.Application.csproj.CopyComplete
+C:\git\TriviaGame\TG.Application\obj\Debug\netstandard2.0\TG.Application.dll
+C:\git\TriviaGame\TG.Application\obj\Debug\netstandard2.0\TG.Application.pdb
+C:\git\TriviaGame\TG.Application\bin\Debug\netstandard2.0\TG.Game..Infrastructure.dll
+C:\git\TriviaGame\TG.Application\bin\Debug\netstandard2.0\TG.Game..Infrastructure.pdb

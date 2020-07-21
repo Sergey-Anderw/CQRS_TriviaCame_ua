@@ -1,0 +1,8 @@
+C:\git\TriviaGame\Gateway.Application\obj\Debug\netstandard2.0\TG.Game.Application.AssemblyInfoInputs.cache
+C:\git\TriviaGame\Gateway.Application\obj\Debug\netstandard2.0\TG.Game.Application.AssemblyInfo.cs
+C:\git\TriviaGame\Gateway.Application\obj\Debug\netstandard2.0\TG.Game.Application.csproj.CoreCompileInputs.cache
+C:\git\TriviaGame\Gateway.Application\bin\Debug\netstandard2.0\TG.Game.Application.deps.json
+C:\git\TriviaGame\Gateway.Application\bin\Debug\netstandard2.0\TG.Game.Application.dll
+C:\git\TriviaGame\Gateway.Application\bin\Debug\netstandard2.0\TG.Game.Application.pdb
+C:\git\TriviaGame\Gateway.Application\obj\Debug\netstandard2.0\TG.Game.Application.dll
+C:\git\TriviaGame\Gateway.Application\obj\Debug\netstandard2.0\TG.Game.Application.pdb
