@@ -5,6 +5,6 @@ Server side for browser game
 
 ASP.NET Core 3.*
 SignalR
-MS SQL DB / Mongo DB (preferred)
+MS SQL DB 
 Entity Framework
 
