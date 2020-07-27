@@ -1,9 +1,0 @@
-C:\git\TriviaGame\TG.Application.Test\bin\Debug\netstandard2.0\TG.Application.Test.deps.json
-C:\git\TriviaGame\TG.Application.Test\bin\Debug\netstandard2.0\TG.Application.Test.dll
-C:\git\TriviaGame\TG.Application.Test\obj\Debug\netstandard2.0\TG.Application.Test.csprojAssemblyReference.cache
-C:\git\TriviaGame\TG.Application.Test\obj\Debug\netstandard2.0\TG.Application.Test.AssemblyInfoInputs.cache
-C:\git\TriviaGame\TG.Application.Test\obj\Debug\netstandard2.0\TG.Application.Test.AssemblyInfo.cs
-C:\git\TriviaGame\TG.Application.Test\bin\Debug\netstandard2.0\TG.Application.Test.pdb
-C:\git\TriviaGame\TG.Application.Test\obj\Debug\netstandard2.0\TG.Application.Test.csproj.CoreCompileInputs.cache
-C:\git\TriviaGame\TG.Application.Test\obj\Debug\netstandard2.0\TG.Application.Test.dll
-C:\git\TriviaGame\TG.Application.Test\obj\Debug\netstandard2.0\TG.Application.Test.pdb
