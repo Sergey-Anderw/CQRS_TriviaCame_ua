@@ -27,9 +27,7 @@ namespace TG.Application.Queries.GetAllCategories
 		{
 			using(_unitOfWork)
 		    {
-				var categories = await _unitOfWork.CategoryRepository.Get(null, source => source
-					.Include(c => c.Questions)
-					.ThenInclude(x => x.Answers));
+				var categories = await _unitOfWork.CategoryRepository.Get();
 				return _mapper.Map<List<Category>>(categories.ToList());
 			}			
 		}

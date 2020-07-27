@@ -4,7 +4,7 @@ using TG.Domain.Models;
 
 namespace TG.Application.Queries
 {
-	public	class GetQuestionsByCategoryIdQuery : IRequest<IEnumerable<Question>>
+	public	class GetQuestionsByCategoryIdQuery : IRequest<Question>
 	{
 		public int Id { get; set; }
 	}

@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -62,21 +63,6 @@ namespace TG.Infrastructure.Hub
 					
 		}
 
-		/*public override async Task OnConnectedAsync()
-		{
-			var gameRoom = await _mediator.Send(
-				new JoinCommand
-				{
-					ConnectionId = Context.ConnectionId
-				});
-
-			if (gameRoom is null)
-				throw new ArgumentNullException(nameof(GameplayRoom));
-
-			await Groups.AddToGroupAsync(Context.ConnectionId, gameRoom.Id.ToString());
-			await base.OnConnectedAsync();
-		}*/
-
 		public async Task Leave()
 		{
 			await PlayerLeave();
@@ -93,8 +79,10 @@ namespace TG.Infrastructure.Hub
 				.First(x => x.Players.Any(p => p.ConnectionId == Context.ConnectionId));
 			if (gr is null)
 				throw new ArgumentNullException(nameof(GameplayRoom));
-
-			await Clients.GroupExcept(gr.Id.ToString(), Context.ConnectionId).Send(jsonData);
+			
+			await Clients.GroupExcept(
+				gr.Id.ToString(), Context.ConnectionId)
+				.Send(jsonData);
 		}
 
 		private async Task PlayerLeave()

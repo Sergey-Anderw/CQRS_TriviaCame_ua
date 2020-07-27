@@ -14,7 +14,7 @@ namespace TG.Domain.Entities
 		public int? CategoryId { get; set; }
 		public CategoryEntity Category { get; set; }
 
-		public List<AnswerEntity> Answers
+		public List<AnswerEntity> Answers 
 		{
 			get => _answers;
 			set => _answers = value ?? throw new ArgumentNullException(nameof(value));

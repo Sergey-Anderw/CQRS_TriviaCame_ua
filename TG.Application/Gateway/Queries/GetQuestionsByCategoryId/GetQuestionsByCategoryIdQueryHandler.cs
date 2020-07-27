@@ -13,7 +13,7 @@ using TG.Infrastructure.EF;
 
 namespace TG.Application.Queries.GetQuestionsByCategoryId
 {
-	public class GetQuestionsByCategoryIdQueryHandler : IRequestHandler<GetQuestionsByCategoryIdQuery, IEnumerable<Question>>
+	public class GetQuestionsByCategoryIdQueryHandler : IRequestHandler<GetQuestionsByCategoryIdQuery, Question>
 	{
 		private readonly IMapper _mapper;
 		private readonly ILogger<GetQuestionsByCategoryIdQuery> _logger;//TO DO
@@ -26,20 +26,21 @@ namespace TG.Application.Queries.GetQuestionsByCategoryId
 			_mapper = mapper;
 			_unitOfWork = unitOfWork;
 		}
-		public async Task<IEnumerable<Question>> Handle(GetQuestionsByCategoryIdQuery request, CancellationToken cancellationToken)
+		public async Task<Question> Handle(GetQuestionsByCategoryIdQuery request, CancellationToken cancellationToken)
 		{
 			using (_unitOfWork)
 			{
 				var categoryEntity = await _unitOfWork.CategoryRepository.GetById(
 					request.Id, source => source
-					.Include(c => c.Questions));
+					.Include(c => c.Questions)
+					.ThenInclude(a => a.Answers));
 
 				if (categoryEntity == null)
 					throw new ArgumentNullException(nameof(QuestionEntity));
 
 				var rnd = new Random();
-				var questions = categoryEntity.Questions.OrderBy(s => rnd.NextDouble());
-				return _mapper.Map<List<Question>>(categoryEntity.Questions);
+				var question = categoryEntity.Questions.OrderBy(s => rnd.NextDouble()).First();
+				return _mapper.Map<Question>(question);
 			}
 		}
 	}
