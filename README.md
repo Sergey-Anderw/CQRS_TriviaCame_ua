@@ -1,7 +1,9 @@
 # CQRS_TriviaCame_ua
 InProgress...
-
 Server side for browser game
+
+http://triviagame.somee.com
+http://triviagame.somee.com/swagger/index.html
 
 ASP.NET Core 3.*
 SignalR
